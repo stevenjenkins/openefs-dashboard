@@ -1,0 +1,23 @@
+{ "status" : "Success",
+  "result" : [
+    {"cell" : "d.cam.loc.reg.example.com",
+     "server" : "server1d",
+     "hosttype" : "dev",
+     "fqdn" : "server1d.example.com"
+    },
+    {"cell" : "d.cam.loc.reg.example.com",
+     "server" : "server2d",
+     "hosttype" : "dev",
+     "fqdn" : "server2d.example.com"
+    },
+    {"cell" : "p.cam.loc.reg.example.com",
+     "server" : "server1p",
+     "hosttype" : "prod",
+     "fqdn" : "server1p.example.com"
+    },
+    {"cell" : "p.cam.loc.reg.example.com",
+     "server" : "server2p",
+     "hosttype" : "prod",
+     "fqdn" : "server2p.example.com"
+    } ]
+}
