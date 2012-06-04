@@ -1,11 +1,20 @@
 package myapp;
 use Dancer ':syntax';
+use Dancer::Plugin::Ajax;
+use Unix::Uptime; # for testing purposes
 use JSON;
 
 our $VERSION = '0.1';
 
 get '/' => sub {
     template 'index';
+};
+
+ajax '/getloadavg' => sub {
+    {
+        timestamp => time,
+        loadavg => ( Unix::Uptime->load )[0]
+    };
 };
 
 get '/campus_details' => sub {
