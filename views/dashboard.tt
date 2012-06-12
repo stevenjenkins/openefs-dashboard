@@ -1,0 +1,93 @@
+<!-- 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+-->
+<!-- script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script -->
+
+<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+
+<!--
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+-->
+
+<!--
+<script type="text/javascript" src="https://www.google.com/jsapi">
+</script>
+-->
+
+<script type="text/javascript" src="javascripts/jquery.gchart.js">
+</script>
+
+<!--
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDj5mre4qsuZLywHgae82Opqd08dyzf-W8&sensor=false">
+</script>
+-->
+
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        function initialize(){
+         initialize_maintenance_mode();
+         initialize_meta();
+        };
+        function initialize_map() {
+            var myOptions = {
+                center: new google.maps.LatLng(-34.397, 150.644),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), myOptions);
+        };
+        function initialize_meta() {
+            $('#meta').gchart({
+                type: 'line', 
+                maxValue: 40,
+                title: 'Metaprojects', 
+                titleColor: 'green',
+                backgroundColor: $.gchart.gradient('horizontal', 'ccffff', 'ccffff00'),
+                series: [
+                    $.gchart.series('Max', [29.1, 28.9, 28.1], 'red', 'ffcccc'),
+                    $.gchart.series('Min', [20.9, 20.8, 19.5, 16.9], 'green'),
+                    $.gchart.series('Rainfall', [157.7, 174.4, 138.5], 'blue', 0, 200)],
+                axes: [
+                    $.gchart.axis('bottom', ['Jan', 'Feb', 'Mar', 'Apr'], 'black'),
+                    $.gchart.axis('left', 0, 40, 'red', 'right'),
+                    $.gchart.axis('left', ['C'], [50], 'red', 'right'),
+                    $.gchart.axis('right', 0, 200, 50, 'blue', 'left'),
+                    $.gchart.axis('right', ['mm'], [50], 'blue', 'left')],
+                legend: 'right'});
+
+        };
+        function initialize_maintenance_mode(){
+            if (true){
+                $('#maintenance').hide();
+            };
+        };
+
+        // now call initialize()
+        initialize();
+    });
+</script>
+
+<!-- <body onload="initialize_meta()"> -->
+
+<h1>Dancer Dashboard demo</h1>
+
+<div id="map" style="width:100%; height=100%"></div>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<div id="maintenance">
+    <h1>EFS is in maintenance mode</h1>
+</div>
+
+<div id="basicGChart"></div>
+<div id="dists" class="google-bar-chart"></div>
+<div id="meta" ></div>
+<div id="projects" class="google-bar-chart"></div>
+<div id="releases" class="google-bar-chart"></div>
+
+Simple dashboard
+</p>
+

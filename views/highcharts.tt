@@ -1,31 +1,14 @@
- 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 
-<!-- script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js">
+</script>
 
 <script type="text/javascript">
 jQuery.noConflict();
 </script>
 
-<script type="text/javascript" src="/javascripts/highcharts/js/highcharts.js"></script>
-<script type="text/javascript" src="/javascripts/highcharts/modules/exporting.js"></script>
-
-
-<script type="text/javascript">
-var example = 'dynamic-update',
-    theme = 'default';
+<script type="text/javascript" src="/javascripts/highcharts.js">
 </script>
-
-<script type="text/javascript" src="/javascripts/highcharts/demo/scripts.js"></script>
-
-<script type="text/javascript">
-    Highcharts.theme = { colors: ['#4572A7'] };// prevent errors in default theme
-    var highchartsOptions = Highcharts.getOptions(); 
-</script>
-
-<link rel="stylesheet" href="/javascripts/highchart/templates/yoo_symphony/css/template.css" type="text/css" />
-<link rel="stylesheet" href="/javascripts/highchart/templates/yoo_symphony/css/variations/brown.css" type="text/css" />
-<link href="/javascripts/highchart/demo/demo.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
 
