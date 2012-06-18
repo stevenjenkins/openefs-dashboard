@@ -8,6 +8,10 @@ use EFS;
 our $VERSION = '0.1';
 our $API_KEY = 'AIzaSyDj5mre4qsuZLywHgae82Opqd08dyzf-W8';
 
+get '/' => sub {
+    redirect '/dashboard';
+}
+
 get '/map' => sub { # a sample google map api to verify this works
     template 'map';
 };
