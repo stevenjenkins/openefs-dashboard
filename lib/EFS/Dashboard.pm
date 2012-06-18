@@ -1,4 +1,4 @@
-package myapp;
+package EFS::Dashboard;
 use Dancer ':syntax';
 use Dancer::Plugin::Ajax;
 use Unix::Uptime; # for testing purposes

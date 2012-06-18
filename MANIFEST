@@ -6,7 +6,8 @@ environments/production.yml
 views/index.tt
 views/layouts/main.tt
 MANIFEST.SKIP
-lib/myapp.pm
+lib/EFS.pm
+lib/EFS/Dashboard.pm
 public/css/style.css
 public/css/error.css
 public/images/perldancer-bg.jpg

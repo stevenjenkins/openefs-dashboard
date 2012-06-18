@@ -3,9 +3,9 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'myapp',
+    NAME                => 'openefs-dashboard',
     AUTHOR              => q{Steven Jenkins<steven.jenkins@gmail.com>},
-    VERSION_FROM        => 'lib/myapp.pm',
+    VERSION_FROM        => 'lib/openefs-dashboard.pm',
     ABSTRACT            => 'Prototype dashboard for OpenEFS',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')
@@ -18,5 +18,5 @@ WriteMakefile(
         'Dancer'     => 1.3095,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'myapp-*' },
+    clean               => { FILES => 'openefs-dashboard-*' },
 );

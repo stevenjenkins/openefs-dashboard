@@ -1,4 +1,4 @@
 #!/usr/bin/env perl
 use Dancer;
-use myapp;
+use EFS::Dashboard;
 dance;
